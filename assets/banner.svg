@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
+  <title id="title">Windows Desktop Icons Installer</title>
+  <desc id="desc">A modern blue and violet banner showing five Windows desktop icons.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07152f"/>
+      <stop offset="0.5" stop-color="#0b3b75"/>
+      <stop offset="1" stop-color="#4c1d95"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#60a5fa" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#60a5fa" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#020617" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="360" rx="28" fill="url(#background)"/>
+  <circle cx="1060" cy="40" r="310" fill="url(#glow)"/>
+  <circle cx="140" cy="350" r="230" fill="url(#glow)" opacity="0.65"/>
+  <path d="M0 290 C260 235 420 350 680 300 S1040 220 1280 275 V360 H0Z" fill="#ffffff" opacity="0.035"/>
+
+  <g transform="translate(82 76)">
+    <rect x="0" y="0" width="78" height="78" rx="17" fill="#ffffff" opacity="0.1"/>
+    <path d="M17 18h20v20H17zm24 0h20v20H41zM17 42h20v20H17zm24 0h20v20H41z" fill="#e0f2fe"/>
+  </g>
+
+  <text x="188" y="113" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="49" font-weight="700" letter-spacing="-1">Desktop Icons Installer</text>
+  <text x="190" y="155" fill="#bfdbfe" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">One command. Five classic icons. Zero admin rights.</text>
+  <rect x="190" y="176" width="410" height="4" rx="2" fill="url(#accent)"/>
+
+  <g transform="translate(190 215)" filter="url(#shadow)" stroke="#dbeafe" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(0 0)">
+      <rect width="88" height="82" rx="18" fill="#ffffff" fill-opacity="0.11" stroke="none"/>
+      <rect x="21" y="19" width="46" height="32" rx="3" fill="none"/>
+      <path d="M36 58h16m-8-7v7" fill="none"/>
+    </g>
+    <g transform="translate(110 0)">
+      <rect width="88" height="82" rx="18" fill="#ffffff" fill-opacity="0.11" stroke="none"/>
+      <path d="M20 29h21l7 7h22v26H20z" fill="#38bdf8" fill-opacity="0.32"/>
+      <path d="M20 29h21l7 7h22v26H20z" fill="none"/>
+    </g>
+    <g transform="translate(220 0)">
+      <rect width="88" height="82" rx="18" fill="#ffffff" fill-opacity="0.11" stroke="none"/>
+      <circle cx="44" cy="40" r="21" fill="none"/>
+      <path d="M23 40h42M44 19c8 8 8 34 0 42M44 19c-8 8-8 34 0 42" fill="none"/>
+    </g>
+    <g transform="translate(330 0)">
+      <rect width="88" height="82" rx="18" fill="#ffffff" fill-opacity="0.11" stroke="none"/>
+      <path d="M31 27h27l-3 36H34zM27 27h35M37 20h15" fill="none"/>
+      <path d="M40 36v17m9-17v17" fill="none" opacity="0.75"/>
+    </g>
+    <g transform="translate(440 0)">
+      <rect width="88" height="82" rx="18" fill="#ffffff" fill-opacity="0.11" stroke="none"/>
+      <circle cx="44" cy="41" r="11" fill="none"/>
+      <path d="M44 18v8m0 30v8M21 41h8m30 0h8M28 25l6 6m20 20 6 6M60 25l-6 6M34 51l-6 6" fill="none"/>
+    </g>
+  </g>
+
+  <g transform="translate(988 86)" opacity="0.95">
+    <rect width="205" height="188" rx="24" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.12"/>
+    <text x="24" y="42" fill="#bfdbfe" font-family="Consolas, monospace" font-size="15">PS C:\&gt;</text>
+    <text x="24" y="78" fill="#ffffff" font-family="Consolas, monospace" font-size="17" font-weight="700">irm ... | iex</text>
+    <circle cx="31" cy="118" r="9" fill="#22c55e"/>
+    <text x="50" y="124" fill="#dcfce7" font-family="Segoe UI, Arial, sans-serif" font-size="16">Icons enabled</text>
+    <path d="M28 153l8 8 16-18" fill="none" stroke="#60a5fa" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="61" y="160" fill="#dbeafe" font-family="Segoe UI, Arial, sans-serif" font-size="15">Ready</text>
+  </g>
+</svg>

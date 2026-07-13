@@ -1,59 +1,105 @@
-# Windows Desktop Icons Installer
+<div align="center">
 
-[Türkçe](#türkçe) · [English](#english)
+![Windows Desktop Icons Installer](assets/banner.svg)
 
-## Türkçe
+<br>
 
-Windows'ta aşağıdaki masaüstü sistem simgelerini tek komutla etkinleştirir:
+[![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D4?style=for-the-badge&logo=windows11&logoColor=white)](https://www.microsoft.com/windows)
+[![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-5391FE?style=for-the-badge&logo=powershell&logoColor=white)](https://learn.microsoft.com/powershell/)
+[![No Admin](https://img.shields.io/badge/Admin-Not%20Required-22C55E?style=for-the-badge&logo=shield&logoColor=white)](#how-it-works)
+[![GitHub Pages](https://img.shields.io/badge/Installer-Live-8B5CF6?style=for-the-badge&logo=github&logoColor=white)](https://bygog.github.io/Windows-Desktop-Icons-Installer/install.ps1)
 
-- Bilgisayar
-- Kullanıcı Dosyaları
-- Ağ
-- Geri Dönüşüm Kutusu
-- Denetim Masası
+**Restore the classic Windows desktop icons with one PowerShell command.**<br>
+**Klasik Windows masaüstü simgelerini tek PowerShell komutuyla geri getirin.**
 
-### Kurulum
+[Türkçe](#-türkçe) · [English](#-english) · [View script](install.ps1)
 
-PowerShell'i normal kullanıcı olarak açın ve şu komutu çalıştırın:
+</div>
 
-```powershell
-irm https://bygog.github.io/Windows-Desktop-Icons-Installer/install.ps1 | iex
-```
+---
 
-Betik yalnızca geçerli kullanıcının `HKCU` kayıt defteri ayarlarını değiştirir. Yönetici yetkisi gerekmez.
+## 🇹🇷 Türkçe
 
-### Güvenlik
+Windows'un sistem simgelerini Ayarlar menülerinde dolaşmadan masaüstüne ekler.
 
-İnternetten indirilen bir betiği çalıştırmadan önce içeriğini inceleyebilirsiniz:
+### Etkinleştirilen simgeler
 
-```powershell
-irm https://bygog.github.io/Windows-Desktop-Icons-Installer/install.ps1
-```
+| | Simge | Windows karşılığı |
+|:--:|---|---|
+| 🖥️ | **Bilgisayar** | This PC |
+| 📁 | **Kullanıcı Dosyaları** | User's Files |
+| 🌐 | **Ağ** | Network |
+| ♻️ | **Geri Dönüşüm Kutusu** | Recycle Bin |
+| ⚙️ | **Denetim Masası** | Control Panel |
 
-## English
+### Hızlı kurulum
 
-Enables the following Windows desktop system icons with a single command:
-
-- This PC
-- User's Files
-- Network
-- Recycle Bin
-- Control Panel
-
-### Installation
-
-Open PowerShell as a standard user and run:
+PowerShell'i açın, aşağıdaki komutu yapıştırın ve `Enter` tuşuna basın:
 
 ```powershell
 irm https://bygog.github.io/Windows-Desktop-Icons-Installer/install.ps1 | iex
 ```
 
-The script changes only the current user's `HKCU` registry settings. Administrator privileges are not required.
+> [!TIP]
+> Yönetici olarak çalıştırmanız gerekmez. Değişiklik geçerli Windows kullanıcısına uygulanır.
 
-### Security
+### Önce incelemek ister misiniz?
 
-You can inspect the downloaded script before running it:
+Çalıştırmadan yalnızca betik içeriğini görüntülemek için:
 
 ```powershell
 irm https://bygog.github.io/Windows-Desktop-Icons-Installer/install.ps1
 ```
+
+---
+
+## 🇬🇧 English
+
+Adds Windows system icons to your desktop without navigating through Settings menus.
+
+### Icons enabled
+
+| | Icon | Registry name |
+|:--:|---|---|
+| 🖥️ | **This PC** | Computer |
+| 📁 | **User's Files** | User Files |
+| 🌐 | **Network** | Network |
+| ♻️ | **Recycle Bin** | Recycle Bin |
+| ⚙️ | **Control Panel** | Control Panel |
+
+### Quick install
+
+Open PowerShell, paste the command below, and press `Enter`:
+
+```powershell
+irm https://bygog.github.io/Windows-Desktop-Icons-Installer/install.ps1 | iex
+```
+
+> [!TIP]
+> Administrator privileges are not required. The change applies to the current Windows user.
+
+### Want to inspect it first?
+
+Display the script without executing it:
+
+```powershell
+irm https://bygog.github.io/Windows-Desktop-Icons-Installer/install.ps1
+```
+
+---
+
+## How it works
+
+The installer writes the five standard shell icon CLSIDs to both desktop icon visibility keys under the current user's registry:
+
+```text
+HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons
+```
+
+Each icon is set to visible (`DWORD 0`), then Windows Explorer is notified to refresh the desktop. The script does not install software, download executables, or modify system-wide (`HKLM`) settings.
+
+<div align="center">
+
+Made for Windows · Powered by PowerShell
+
+</div>
